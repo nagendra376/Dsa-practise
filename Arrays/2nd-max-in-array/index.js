@@ -14,3 +14,20 @@ for(let i = 0 ; i<arr.length; i++){
 
 console.log(max, smax)
 
+
+
+
+let min = Infinity;
+let smin = Infinity;
+
+for(let i = 0; i < arr.length; i++){
+    if(min > arr[i]){
+        smin = min;
+        min = arr[i]
+    }else if(smin < arr[i]){
+        smin = arr[i]
+    }
+    
+}
+
+console.log(min, smin)
