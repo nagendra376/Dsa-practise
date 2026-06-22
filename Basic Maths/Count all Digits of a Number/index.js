@@ -1,5 +1,7 @@
 // getting last digit and divide no. by 10 
 
+https://www.geeksforgeeks.org/problems/count-total-digits-in-a-number/1
+
 O(log10(n));
 
 function number(n){
