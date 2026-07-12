@@ -277,3 +277,34 @@ function pattern(n) {
     console.log(row);
   }
 }
+
+//     A
+//    ABA
+//   ABCBA
+//  ABCDCBA
+// ABCDEDCBA
+
+function pattern(n) {
+  for (let i = 0; i < n; i++) {
+    let row = "";
+    let char = 0;
+    for (let j = 1; j <= n - i - 1; j++) {
+      row += " ";
+    }
+    let ch = "A".charCodeAt(0);
+    let midPoint = Math.floor((2 * i + 1) / 2);
+    for (let j = 1; j <= 2 * i + 1; j++) {
+      row += String.fromCharCode(ch);
+      if (j <= midPoint) {
+        ch++;
+      } else {
+        ch--;
+      }
+    }
+    for (let j = 1; j <= n - i - 1; j++) {
+      row += " ";
+    }
+
+    console.log(row);
+  }
+}
