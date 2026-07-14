@@ -1,3 +1,5 @@
+// O(n) time Complexity
+
 function getSecondOrderElements(n, a) {
   // Write your code here.
   const secondLargestElement = secondLargest(n, a);
