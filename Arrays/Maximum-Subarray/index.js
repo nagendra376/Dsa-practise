@@ -2,13 +2,13 @@
 
 // using greedy(kadane's pattern)
 
-var maxSubArray = function(nums) {
+var maxSubArray = function (nums) {
   let maxSum = nums[0];
   let currentSum = 0;
-  
-  for(num of nums){
-    if(currentSum<0){
-        currentSum = 0;
+
+  for (num of nums) {
+    if (currentSum < 0) {
+      currentSum = 0;
     }
 
     currentSum += num;
@@ -18,8 +18,4 @@ var maxSubArray = function(nums) {
   return maxSum;
 };
 
-console.log(maxSubArray([5,4,-1,7,8]));
-
-//using dp
-
-
+console.log(maxSubArray([5, 4, -1, 7, 8]));
